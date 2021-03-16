@@ -1,0 +1,16 @@
+React
+	Libreria para crear aplicaciones
+	Es declarativa
+	Es eficiente
+	Trabaja con componentes
+	Jsx = Js+XML
+	
+Babel
+	Utilizar características de JavaScript en navegadores que no soporten
+	
+Saber Versión de React
+	npx --version
+	
+Creación Proyecto
+	npx create-react-app my-app		-> https://create-react-app.dev/
+	npm start

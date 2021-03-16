@@ -1,0 +1,104 @@
+1. Crear el Proyecto
+	npx create-react-app calendar-app
+	cd calendar-app
+	npm install react-router-dom	-> Instalar el Router
+	
+	ir a public/index.html y agregar el css de bootstrap (https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+	
+2. En src/index.js
+	import React from 'react';
+	import ReactDOM from 'react-dom';
+	import { CalendarApp } from './CalendarApp';
+	ReactDOM.render(
+		<CalendarApp />,  
+		document.getElementById('root')
+	);
+	
+	Crear el componente prinicpal de la aplicacion 
+	import React from 'react';
+	export const CalendarApp = () => {
+		return(
+			<div>
+				<h1>Hola</h1> /*AQUI SE PONEN EL COMPONENTE <AppRouter />*/
+			</div>
+		)
+	}
+	
+3. Crear las carpetas src/components/auth calendar ui y ahi crear un compnente
+
+4. Crear la carpeta src/routers/AppRouter.js crear este componente y añadirlo en el componente principal
+	Crear las rutas segun https://reactrouter.com/web/guides/quick-start
+	
+	npm i sweetalert2
+	
+	<i class="fas fa-car-alt"></i> 
+	
+	
+	
+Modal:
+		npm install --save react-modal
+		
+Redux
+	npm install --save redux react-redux
+
+	Crear el store/store
+	Crear el root Reducer
+	
+	
+/Reducer
+		Data de lo que defino que va en mi STORE (lo que quiero conservar en memoria)
+		y aqui defino que se hace con la data si se actualiza elimina etc
+
+/Actions
+		Tengo las funciones de retorno del store Y LOS dispatch
+		
+		
+
+
+
+Symfony
+	composer create-project symfony/skeleton my_project_name
+	create-project symfony/skeleton api-rest-servicio-auto "4.2.*"	-->	Si quiero una versión específica
+	
+	Para activar los comandos
+	composer require doctrine maker	
+	
+	Crear Controler
+	php bin/console make:controller AutoController
+	
+	Para activar symfony en apache
+	composer require symfony/apache-pack
+	
+	Creación de HOst Virtuales
+	Ir al archivo C:\xampp\apache\conf\extra\httpd-vhosts.conf  	->	crear los enlaces
+	Ir al archico C:\Windows\System32\drivers\etc\hosts				->	Agregar el dominio 127.0.0.1       api-rest-servicio-auto.com
+	
+	Creación de rutas
+	/config/routes.yaml
+	
+	Instalar Paquetes	-> https://packagist.org/
+	composer require firebase/php-jwt
+	composer require knplabs/knp-paginator-bundle
+	composer require symfony/http-foundation
+	composer require symfony/serializer
+	composer require symfony/validator
+	composer require symfony/asset
+	composer require symfony/property-access
+	
+	Configurar en .env los parametros de conexión a la BD
+	
+	Creación de Modelos
+	php bin/console doctrine:mapping:import App\Entity annotation --path=src\Entity
+	php bin/console make:entity	->se generan a mano
+	
+	Creación de Métodos
+	php bin/console make:entity --regenerate
+	Renombrar las entidades a singular
+	
+	https://symfony.com/doc/current/doctrine.html
+	
+	Ver armado de consultas
+	https://www.doctrine-project.org/projects/doctrine-orm/en/current/reference/query-builder.html
+	
+	//$json = $request->get('json', null);
+	//return new JsonResponse($data);
